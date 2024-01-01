@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/index.css" />
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
+    <link rel="shortcut icon"href="./images/htutlogo.png" type="image/x-icon"/>
+    <title>Htut Company</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Add this script in your head or before the closing body tag -->
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  
+
+
+
+
+
+      <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+</head>
+
+
+
+
+<style>
+#header1 {
+  transition: all 0.5s;
+  z-index: 997;
+
+  width: 100%;
+  height: 0px;
+  background-color: black;
+  position: fixed;
+  padding-bottom: 90px;
+
+
+}
+
+.header1-wrapper {
+
+text-align: right;
+line-height: 18px;
+font-size: 14px;;
+padding-top: 5px;
+
+}
+
+#header1.header-scrolled,
+#header1.header-inner-pages {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+/* --------------------------------------------------------------*/ 
+
+.navbar {
+  padding: 0;
+}
+
+.navbar ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+ 
+}
+
+.navbar li {
+  position: relative;
+  margin: 0;
+    height: 10px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    padding-right: 100px;
+}
+
+.navbar a,
+.navbar a:focus {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0 10px 30px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #fff;
+  white-space: nowrap;
+  transition: 0.3s;
+}
+.navbar a i,
+.navbar a:focus i {
+  font-size: 12px;
+  line-height: 0;
+  margin-left: 5px;
+}
+
+.navbar a:hover,
+.navbar .active,
+.navbar .active:focus,
+.navbar li:hover>a {
+  color: #ffc451;
+}
+
+/* APPLY CV */
+/* -------------------------- */
+.header1-wrapper .get-started-btn{
+            color: #fff;
+            border-radius: 4px;
+            padding: 7px 25px 8px 25px;
+            white-space: nowrap;
+            transition: 0.3s;
+            font-size: 14px;
+            display: inline-block;
+            border: 2px solid #ffc451;
+            text-decoration: none;
+          }
+
+          .header1-wrapper .get-started-btn:hover {
+              background: #ffbb38;
+              color: #343a40;
+            }
+
+
+/**
+* Mobile Navigation 
+*/
+/* ----------------------------- */
+
+.mobile-nav-toggle {
+  color: #fff;
+  font-size: 28px;
+  cursor: pointer;
+  display: none;
+  line-height: 0;
+  transition: 0.5s;
+}
+
+@media (max-width: 991px) {
+  .mobile-nav-toggle {
+    display: block;
+  }
+
+  .navbar ul {
+    display: none;
+  }
+
+  .navbar-mobile a,
+  .navbar-mobile a:focus {
+    font-size: 18px; /* Adjust the font size for smaller screens */
+  }
+}
+
+.navbar-mobile {
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.9);
+  transition: 0.3s;
+  z-index: 999;
+}
+
+.navbar-mobile .mobile-nav-toggle {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.navbar-mobile ul {
+  display: block;
+  position: absolute;
+  top: 55px;
+  right: 15px;
+  bottom: 15px;
+  left: 15px;
+  padding: 10px 0;
+  background-color: #fff;
+  overflow-y: auto;
+  transition: 0.3s;
+}
+
+.navbar-mobile ul li {
+  height: 40px;
+}
+
+.navbar-mobile a,
+.navbar-mobile a:focus {
+  padding: 10px 20px;
+  font-size: 15px;
+  color: #151515;
+}
+
+.navbar-mobile a:hover,
+.navbar-mobile .active,
+.navbar-mobile li:hover > a {
+  color: #151515;
+  background-color: #ffc451;
+}
+
+.navbar-mobile .getstarted,
+.navbar-mobile .getstarted:focus {
+  margin: 15px;
+}
+
+
+
+
+
+</style>
+
+  <body>
+
+    <header id="header1" class="header1 ">
+      <div class="header1-wrapper">
+      <div class="container d-flex align-items-center justify-content-lg-between">
+        <h1 class="header1-logo me-auto me-lg-0"><a href=""><img class="logo" src="./images/htutlogo.png" width="80px"></a></h1>
+
+        <nav id="navbar" class="navbar order-last order-lg-0">
+          <ul>
+            <li><a class="nav-link scrollto" href="index.html">Home</a></li>
+            <li><a class="nav-link scrollto" href="about.html">About</a></li>
+            <li><a class="nav-link scrollto" href="">Services</a></li>
+            <li><a class="nav-link scrollto" href="product.html">Product</a></li>
+            <li><a class="nav-link scrollto" href="#team">Activity</a></li>
+            <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav><!-- .navbar -->
+        
+        
+  
+ 
+
+        <a href="#" class="get-started-btn scrollto" id="get-started-btn">APPLY CV</a>
+  
+
+        </div>
+      </div>
+ </header>
+
+
+
+
+
+
+
+
+    <div class="">
+      <!-- header -->
+      <header class="header" id="home">
+
+        <!-- Cubeoid -->
+        <div class="cube-wrapper">
+          <div class="cube">
+            <div class="front-side">
+              <img src="./images/header-bsapp.png" alt="iphone12" />
+            </div>
+            <div class="back-side">
+              <img src="./images/logobb.png" alt="iphone12" />
+            </div>
+          </div>
+
+          <!-- controls -->
+          <div class="controls">
+            <a href="#" class="top-x-control"
+              ><i class="fas fa-arrow-up"></i
+            ></a>
+            <a href="#" class="bottom-x-control"
+              ><i class="fas fa-arrow-down"></i
+            ></a>
+            <a href="#" class="left-y-control"
+              ><i class="fas fa-arrow-left"></i
+            ></a>
+            <a href="#" class="right-y-control"
+              ><i class="fas fa-arrow-right"></i
+            ></a>
+            <a href="#" class="top-z-control"
+              ><i class="fas fa-arrow-down"></i
+            ></a>
+            <a href="#" class="bottom-z-control"
+              ><i class="fas fa-arrow-up"></i
+            ></a>
+          </div>
+        </div>
+
+        <!-- banner -->
+        <div class="header-banner">
+          <h1>&#8592;HTUT IS</h1>
+          <p>"THE FIRST
+            AND EARLIEST
+            COMPANY."</p>
+          <span> We are giving the best services <br>
+             in IT Solution, Web development, <br>
+            Web portal, Mobile solution, <br>
+             Solution for organization.</span>
+          <button>Read more</button>
+        </div>
+
+        <!-- slideshow -->
+        <div class="slideshow"></div>
+      </header>
+      <!-- end header -->
+
+      <!-- iphones section-->
+      <section class="iphones-section" id="iphone-section">
+        <h1>Our Products</h1>
+
+        <!-- images -->
+        <div class="iphones">
+          <img
+            src="./images/header-naylaapp.png"
+            alt="iphone"
+            class="iphone-img-1"
+          />
+          <img
+            src="./images/header-tatapp.png"
+            alt="iphone"
+            class="iphone-img-2"
+          />
+        </div>
+
+        <!-- buttons -->
+        <div class="iphone-btns">
+          <a href="#" class="iphone-btn">
+            <span>Learn More</span>
+          </a>
+          <a href="#" class="iphone-btn">
+            <span>Shop</span>
+          </a>
+        </div>
+      </section>
+      <!-- end iphones section -->
+
+    </div>
+
+
+  <!-- ======= Services Section ======= -->
+  <section id="services" class="services">
+    <div class="container" data-aos="fade-up">
+
+      <div class="section-title">
+        <h2>Services</h2>
+        <p>Check our Services</p>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+          <div class="icon-box">
+          <div class="icon"><img src="images/ballone_circle.png" alt="" style="width: 100px;"></div>
+            <h4><a href="">WHAT WE PROVIDE
+              BALLONESTAR APPLICATION</a></h4>
+            <p>BalloneStar @ Football Star is the Daily Journal Mobile Application. It is presenting the most popular sports Leagues’ news, photos in time.....
+
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
+          <div class="icon-box">
+            <div class="icon"><img src="images/nayla.png" style="width: 100px;" alt=""></div>
+            <h4><a href="">WHAT WE PROVIDE
+              NAYLA APPLICATION </a></h4>
+            <p>NayLa is one mobile application which aims with love and benevolence to be fortunate through reading in one place variety news plus knowledge.....</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300">
+          <div class="icon-box">
+            <div class="icon"><img src="images/tatlan.png" style="width: 100px;" alt=""></div>
+            <h4><a href="">WHAT WE PROVIDE
+              TATLAN APPLICATION</a></h4>
+            <p>Tatlan Mobile Application is producding with belove for Myanmar youths and students who want to improve themselves with education.....</p>
+          </div>
+        </div>
+
+   
+
+      </div>
+
+      <div class="row" style="padding-top: 20px;">
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300">
+          <div class="icon-box">
+            <div class="icon"><img src="images/dhamma.jpg" style="width: 100px;" alt=""></div>
+            <h4><a href="">WHAT WE PROVIDE
+              Htut Dhamma APPLICATION</a></h4>
+            <p>HTUT Dhamma is one of the religious mobile application for myanmar people which is very useful and descirbes Myanmar pronunciation for pali language. In this HTUT Dhamma application......</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300">
+          <div class="icon-box">
+            <div class="icon"><img src="images/starchennl.png" style="width: 115px; height: 120px;" alt=""></div>
+            <h4><a href="">WHAT WE PROVIDE
+              StarChannel APPLICATION</a></h4>
+            <p>Star Channel tv is a one-stop service for presenting interesting TV shows on a daily basis. In your spare time, you can easily watch informative videos. Star Channel Tv Knowledgeable sections; Sports Astrology.......</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300">
+          <div class="icon-box">
+            <div class="icon"><img src="images/htutabidan.webp" style="width: 100px;" alt=""></div>
+            <h4><a href="">WHAT WE PROVIDE
+              Htut Dictionary APPLICATION</a></h4>
+            <p>Dictionary is one of the useful mobile application which is launched from HTUT media for translation English to Myanmar language. In HTUT dictionary mobile application, there are 35,000 total words .......</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section><!-- End Services Section -->
+
+
+  <div class="title">
+    <h2>WE CREATE MOBILE 
+      & WEB APP DEVELOPMENT </h2>
+    <p>BalloneStar @ Football Star is the Daily Journal Mobile Application. It is presenting the most popular sports Leagues’ news, photos in time..... </p>
+  </div>
+
+
+   <!-- ======= Cta Section ======= -->
+   <section id="cta" class="cta">
+    <div class="container" data-aos="zoom-in">
+
+      <div class="text-center">
+        <h3>HTUT COMPANY</h3>
+        <p> Learn more about the latest information of Htut Company</p>
+        <a class="cta-btn" href="#">Marketing Solutions</a>
+
+        <a class="cta-btn" href="#">Recent Post</a>
+
+        <a class="cta-btn" href="#">Contact Business</a>
+      </div>
+
+    </div>
+  </section><!-- End Cta Section -->
+
+    <!-- ======= Clients Section ======= -->
+    <section id="clients" class="clients">
+
+      <div class="client-title">
+        <h2>OUR PARTNER</h2>
+        <p>Business and corporate partners are important in binging the Operation Warm mission to life. </p>
+      </div>
+
+
+
+      <div class="" data-aos="zoom-in">
+
+        <div class="clients-slider swiper">
+          <div class="swiper-wrapper align-items-center">
+            <div class="swiper-slide"><img src="images/client/kbzpay.png" class="" alt=""></div>
+            <div class="swiper-slide"><img src="images/client/lota.png"  class="" alt=""></div>
+            <div class="swiper-slide"><img src="images/client/mpt.png"  class="" alt=""></div>
+            <div class="swiper-slide"><img src="images/client/pa.png"  class="" alt=""></div>
+            <div class="swiper-slide"><img src="images/client/sm.png"  class="" alt=""></div>
+            <div class="swiper-slide"><img src="images/client/mc.png"  class="" alt=""></div>
+            <div class="swiper-slide"><img src="images/client/rbs.png"  class="" alt=""></div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section><!-- End Clients Section -->
+
+      <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-info">
+              <h3>HTUT<span>.</span></h3>
+              <p>
+                No.(8),Moe Ma Kha (1) Street, <br>
+                Ma Li Kha Housing, <br>
+                Thingangyun Tsp,Yangon,Myanmar.<br><br>
+                <strong>Phone:</strong> +959 73124999<br>
+                <strong>Email: </strong>info@htut.com<br>
+              </p>
+              <div class="social-links mt-3">
+                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Product</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Activity</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">MOBILE APPS DEVELOPMENT</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">WEB APPS DEVELOPMENT</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">WEB DESIGN & DEVELOPMENT</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">DIGITAL SOCIAL MEDIA</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">CONTENT CREATION</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+            <h4>Join with us</h4>
+            <p>Htut company offers marketing solutions for various business sectors based on creators' contents.
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+    <div class="copy-right">
+     <strong><span>Latest news or private information policy Copyright © 2024 Htut Company.</span></strong>. 
+        <P>All Rights Reserved</P>
+    </div>
+
+    <div class="credits">
+
+      Designed by <a href=""  style="text-decoration: none; color: gold;" >htut.com</a>
+
+    </div>
+
+
+  </div>
+  </footer><!-- End Footer -->
+
+
+
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+
+  
+    <script src="script.js"></script>
+
+      <!-- Swipper JS File -->
+    <script src="assets/js/main.js"></script>
+    
+  </body>
+</html>
+
