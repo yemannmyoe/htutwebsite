@@ -141,6 +141,7 @@ padding-top: 5px;
               letter-spacing: 0.1px;
               color: #151515;
              
+             
 
             }
 
@@ -312,15 +313,13 @@ padding-top: 5px;
 }
 
 
-.featured-services h2 {
-  font-size: 12px;
-  font-weight: 500;
+.featured-services h3 {
+  font-size: 15px;
+  font-weight: bold;
   padding: 0;
-  line-height: 1px;
-  margin: 0 0 5px 0;
+    margin: 0 0 5px 0;
   letter-spacing: 0.5px;
-
-  color: #aaaaaa;
+  color: #6e6767;
   font-family: "Poppins", sans-serif;
   padding-top: 2px;
   padding-bottom: 10px;

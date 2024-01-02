@@ -14,7 +14,7 @@ html {
   font-size: 62.5%;
   scroll-behavior: smooth; }
 
-.f-center, .back-side, .back-side::before, .back-side::after, .header-banner, .iphones-section .iphone-btns .iphone-btn,
+.f-center, .back-side, .back-side::before, .back-side::after, .header-banner, .product-section .iphone-btns .iphone-btn,
 .watch-cases, .watch-control, .airpods-section, .footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -225,7 +225,7 @@ html {
     font-weight: 400;
     letter-spacing: 0.1rem;
     margin: 6rem 0 4rem; 
-    color: #ffc451;
+    color: rgb(221, 0, 0);
   }
   .header-banner span {
     font-size: 3rem;
@@ -254,6 +254,10 @@ html {
   width: 100%;
   height: 100%;
   position: absolute;
+  padding-top: 90px;
+    /* Add the blur effect */
+    filter: blur(3px);
+    -webkit-filter: blur(3px);
   left: 0;
   top: 0;
   z-index: -1; }
@@ -270,7 +274,7 @@ html {
     .slideshow div.active {
       opacity: 1; }
 
-.iphones-section {
+.product-section {
   width: 100%;
   height: 100vh;
   padding: 10vh 0;
@@ -287,14 +291,14 @@ html {
   -ms-flex-pack: distribute;
       justify-content: space-around; }
 
-  .iphones-section h1 {
+  .product-section h1 {
     font-size: 10rem;
     font-weight: 200;
     color: #000;
     position: relative;
     margin-bottom: 5rem; }
 
-    .iphones-section h1::before {
+    .product-section h1::before {
       content: "";
       width: 130%;
       height: 30vw;
@@ -309,7 +313,7 @@ html {
               transform-origin: left top;
       z-index: -1;
       border-radius: 1rem; }
-  .iphones-section .iphones {
+  .product-section .iphones {
     height: 60vh;
     width: 50vw;
     background: -webkit-gradient(linear, left top, left bottom, from(#6edae6), to(#fff));
@@ -317,7 +321,7 @@ html {
     border-radius: 0.5rem; }
 
 
-    .iphones-section .iphones img {
+    .product-section .iphones img {
       padding-top: 50px;
       width: inherit;
       height: inherit;
@@ -328,18 +332,18 @@ html {
       transition: opacity 2s; }
 
 
-    .iphones-section .iphones .iphone-img-2 {
+    .product-section .iphones .iphone-img-2 {
       opacity: 0; }
-    .iphones-section .iphones:hover .iphone-img-1 {
+    .product-section .iphones:hover .iphone-img-1 {
       opacity: 0; }
-    .iphones-section .iphones:hover .iphone-img-2 {
+    .product-section .iphones:hover .iphone-img-2 {
       opacity: 1; }
-  .iphones-section .iphone-btns {
+  .product-section .iphone-btns {
 
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
-    .iphones-section .iphone-btns .iphone-btn {
+    .product-section .iphone-btns .iphone-btn {
       width: 6rem;
       height: 6rem;
       background: -webkit-gradient(linear, left top, right top, color-stop(60%, #333333), to(#525252));
@@ -347,14 +351,14 @@ html {
       margin: 0 3rem;
       border-radius: 50%;
       position: relative; }
-      .iphones-section .iphone-btns .iphone-btn::after {
+      .product-section .iphone-btns .iphone-btn::after {
         content: "";
         width: 50%;
         height: 50%;
         display: block;
         border: 0.1rem solid #6edae6;
         border-radius: 1rem; }
-      .iphones-section .iphone-btns .iphone-btn span {
+      .product-section .iphone-btns .iphone-btn span {
         position: absolute;
         top: -3rem;
         font-size: 1.6rem;
@@ -371,7 +375,7 @@ html {
         transition: -webkit-transform 0.5s;
         transition: transform 0.5s;
         transition: transform 0.5s, -webkit-transform 0.5s; }
-      .iphones-section .iphone-btns .iphone-btn:hover span {
+      .product-section .iphone-btns .iphone-btn:hover span {
         -webkit-transform: scale(1);
                 transform: scale(1); }
 
@@ -431,7 +435,7 @@ html {
     .header-banner button:hover {
       -webkit-clip-path: polygon(50% 0%, 81% 5%, 100% 0, 100% 100%, 80% 95%, 50% 100%, 20% 95%, 0 100%, 0 0, 23% 5%);
               clip-path: polygon(50% 0%, 81% 5%, 100% 0, 100% 100%, 80% 95%, 50% 100%, 20% 95%, 0 100%, 0 0, 23% 5%); }
-  .iphones-section .iphones {
+  .product-section .iphones {
     height: 70vh;
     width: 70vw; }
   .watch-btn {
@@ -451,7 +455,7 @@ html {
  @media (max-width: 550px) {
   .navbar .navbar-link {
     margin: 0 1.5rem; }
-  .iphones-section {
+  .product-section {
     font-size: 8rem; }
 
  
@@ -474,7 +478,7 @@ html {
     width: max-content; }
   .header-banner p {
     text-align: center; }
-  .iphones-section .iphones {
+  .product-section .iphones {
     width: 75vw; }
  
 } 
@@ -587,7 +591,7 @@ section {
 /* # Cta
 -------------------------------------------------------------- */
 .cta {
-  background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.5)), url("../images/BalloneStar.jpg") fixed center center;
+  background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.5)), url("../images/product_images/BalloneStar.jpg") fixed center center;
   background-size: cover;
   padding: 60px 0;
 }
